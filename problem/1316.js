@@ -15,7 +15,7 @@ for (let i = 1; i <= num; i++) {
       // console.log(checker, checker.at(-1), str, checker.at(-1) !== str)
       if (checker.at(-1) !== str) {
         if (checker.includes(str)) {
-          isTrue = false;
+          isTrue = false; // 이전에 나왔으면 조건성립X
         }
         checker.push(str); // 이전에 안나왔으면 push
       }
